@@ -232,7 +232,7 @@ h4 {
 
 @media screen and (max-width: 600px) {
   #hero h2 {
-    padding-top: 130px; /* Или любое другое значение, которое предотвратит заездание под nav */
+    padding-top: 130px; 
   }
 }
 
@@ -279,6 +279,11 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+
+@media screen and (max-width: 600px) {
+ #About_us {
+    padding-top: 60px; 
+  }
 
 @media screen and (max-width: 480px) {
   .services .options {
