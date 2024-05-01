@@ -48,6 +48,7 @@ nav {
 
 nav a {
   color: black;
+  text-transform: uppercase;
   transition: all 0.3s ease 0s;
   font-weight: bold;
 }
@@ -397,6 +398,7 @@ section > h2#Advantages {
 
 .product > button {
   background-color: #af463cdd;
+  color: rgb(241, 209, 209);
   margin: 15px 0;
   border: 0;
   height: 30px;
@@ -424,8 +426,8 @@ section > h2#Advantages {
   height: 290px; 
   margin-top: 90px;
   margin-bottom: 40px; 
-  padding: 10px;
-  text-align: center;
+  padding: 20px;
+  text-align: justify;
   background-color: #bbbaba;  
   border: 1px solid rgba(101, 89, 89, 0.268);
   border-radius: 12px;
@@ -470,6 +472,10 @@ footer > ul > li {
   padding: 0 10px;
   list-style: none;
   cursor: pointer;
+}
+
+footer > ul > li:hover {
+  color: black;
 }
 
 footer > span {
