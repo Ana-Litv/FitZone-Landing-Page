@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitZone</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#"><img src="images\logo-of-a-fitness-club.png" alt="Logo" loading="lazy" /> FitZone</a>
+        </div>
+        <div class="toggle">
+            <a href="#">
+                <ion-icon name="menu-outline"></ion-icon>
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a class="nav-link" href="#About_us">О нас</a></li>
+            <li><a class="nav-link" href="#Services">Услуги</a></li>
+            <li><a class="nav-link" href="#Advantages">Преимущества</a></li>
+            <li><a class="nav-link" href="#pricing">Абонементы и цены</a></li>
+            <li><a class="nav-link" href="#Sales">Скидки</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="hero">
+            <h2>Привлекательное предложение для вашего здоровья и фитнеса</h2>
+            <h4>Запишитесь на бесплатную пробную тренировку прямо сейчас:</h4>
+            <form method="post" action="https://www.freecodecamp.com/email-submit" id="form">
+                <input type="email" name="email" id="email" placeholder="Введите Ваш email" required>
+                <input type="submit" id="submit" value="Подать заявку" class="btn">
+            </form>
+        </section>
+        <section id="About_us">
+            <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/tUykoP30Gb0?si=AjYl0pF5uC2OJHGy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="video"></iframe></div>
+            <div class="information">
+                <p><span class="highlight">FitZone</span> – это не просто фитнес-центр. Это уникальное пространство, где каждый человек находит свой путь к здоровью, красоте и самореализации. Мы верим, что забота о своем теле - это не только тренировки и правильное питание, но и гармония души и мысли.</p>
+                <p>Мы создаем атмосферу поддержки и мотивации, где каждый может найти свою силу и уверенность.</p>
+                <p><span class="highlight">Наша миссия</span> – вдохновлять и помогать вам стать лучшей версией себя.</p>
+            </div>
+        </section>
+        <section class="services" id="Services">
+            <div class="options">
+                <img src="images\fitness-without-a-trainer--strong.png" alt="Personal Training Logo" loading="lazy">
+                <p>Персональные тренировки</p>
+            </div>
+            <div class="options">
+                <img src="images\group-training.png" alt="Group Training Logo" loading="lazy">
+                <p>Групповые занятия</p>
+            </div>
+            <div class="options">
+                <img src="images\cardio-and-strength-training.png" alt="Cardio & Strength Training Logo" loading="lazy">
+                <p>Кардио и силовые тренировки</p>
+            </div>
+            <div class="options">
+                <img src="images\swimming-pool.png" alt="Spa & Pool Logo" loading="lazy">
+                <p>Спа-зона и бассейн</p>
+            </div>
+        </section>
+        <section>
+            <h2 id="Advantages">Наши преимущества:</h2>
+        </section>
+        <section class="advantages">
+            <div class="pluses">
+                <p class="pluses-heading"><span class="highlight">Профессиональные тренеры</span></p>
+                <p>Наши тренеры – это опытные специалисты, готовые помочь вам на каждом этапе вашего фитнес-пути.</p>
+            </div>
+            <div class="pluses">
+                <p class="pluses-heading"><span class="highlight">Современное оборудование</span></p>
+                <p>Мы постоянно обновляем наше оборудование, чтобы предоставлять вам лучшие условия для тренировок.</p>
+            </div>
+            <div class="pluses">
+                <p class="pluses-heading"><span class="highlight">Удобное расположение</span></p>
+                <p>Наш зал удобно расположен в центре города с хорошей транспортной доступностью.</p>
+            </div>
+            <div class="pluses">
+                <p class="pluses-heading"><span class="highlight">Гибкий график</span></p>
+                <p>Мы работаем с раннего утра до позднего вечера, чтобы вы могли подобрать удобное время для тренировок.</p>
+            </div>
+        </section>
+        <section id="pricing">
+            <div class="product" id="daily">
+                <div class="level">Ежедневный абонемент</div>
+                <h3>899 рублей</h3>
+                <button class="btn">Выбрать</button>
+            </div>
+            <div class="product" id="monthly">
+                <div class="level">Ежемесячный абонемент</div>
+                <h3>3999 рублей</h3>
+                <button class="btn">Выбрать</button>
+            </div>
+            <div class="product" id="yearly">
+                <div class="level">Годовой абонемент</div>
+                <h3>38999 рублей</h3>
+                <button class="btn">Выбрать</button>
+            </div>
+        </section>
+        <section id="Sales" class="sales">
+            <div class="sales-options">
+                <p><span class="highlight">Скидка для друзей:</span></p>
+                <p>Пригласите друга и получите скидку 10% на ваш следующий абонемент.</p>
+            </div>
+            <div class="sales-options">
+                <p><span class="highlight">Скидка для студентов:</span></p>
+                <p>Студентам предоставляется скидка 15% на все виды абонементов при предъявлении студенческого билета.</p>
+            </div>
+        </section>
+        <section id="bottom">
+            <h4>Присоединяйтесь к нам сегодня и начните свой путь к здоровому образу жизни!</h4>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li href="#">Privacy</li>
+            <li href="#">Terms</li>
+            <li href="#">Contact</li>
+        </ul>
+        <span>Copyright 2024, FitZone</span>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+    $(function() {
+        $(".toggle").on("click", function() {
+            if ($(".menu").hasClass("active")) {
+
+                $(".menu").removeClass("active");
+                $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+
+            } else {
+
+                $(".menu").addClass("active");
+                $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+
+            }
+        });
+
+        $(".menu li").on("click", function() {
+
+            $(".menu").removeClass("active");
+            $(".toggle a").html("<ion-icon name='menu-outline'></ion-icon>");
+
+        });
+
+    });
+    </script>
+    <i class="baseline-subscriptions"></i>
+</body>
+
+</html>
