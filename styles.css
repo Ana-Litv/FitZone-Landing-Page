@@ -48,7 +48,6 @@ nav {
 
 nav a {
   color: black;
-  text-transform: uppercase;
   transition: all 0.3s ease 0s;
   font-weight: bold;
 }
@@ -87,6 +86,7 @@ nav a:hover {
 .menu li {
   padding: 15px 10px;
   font-size: 16px;
+  text-transform: uppercase;
 }
 
 .toggle {
@@ -228,6 +228,12 @@ h4 {
   font-weight: bold;
   font-style: normal;
   scroll-margin-top: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  #hero h2 {
+    padding-top: 130px; /* Или любое другое значение, которое предотвратит заездание под nav */
+  }
 }
 
 #About_us {
