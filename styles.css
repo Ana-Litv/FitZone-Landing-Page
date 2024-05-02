@@ -29,6 +29,41 @@ a:hover {
   text-decoration: none;
 }
 
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 25px;
+  background: rgba(175, 70, 60);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 34px;
+}
+
+.top-bar span {
+  color: #fff;
+}
+
+.top-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.top-bar li {
+  margin: 0px 5px;
+}
+
+.top-bar a {
+  color: #fff;
+}
+
+.top-bar a:hover {
+  color: #222;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -36,17 +71,19 @@ nav {
   background: #cccccc;
   width: 100%;
   position: fixed;
-  top: 0;
+  margin-top: 34px;
+}
+
+@media screen and (min-width: 800px) {
+  nav {
+    height: 70px;
+  }
 }
 
 nav a {
   color: black;
   transition: all 0.3s ease 0s;
   font-weight: bold;
-}
-
-nav a:hover {
-  color: #990f02;
 }
 
 .logo {
@@ -58,7 +95,6 @@ nav a:hover {
   align-items: center;
   font-size: 20px;
   color: #990f02;
-  transition: all 0.3s ease 0s;
 }
 
 .logo a:hover {
@@ -80,6 +116,38 @@ nav a:hover {
   padding: 15px 10px;
   font-size: 16px;
   text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.menu a {
+  transition: color 0.3s ease 0s;
+}
+
+.nav-link {
+  position: relative;
+} 
+
+.nav-link::after {
+  background: none repeat scroll 0 0 transparent;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #990f02;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.nav-link:hover::after {
+  background-color: #990f02;
+  width: 100%;
+  left: 0;
+}
+
+nav a:hover {
+  color: #990f02;
 }
 
 .toggle {
@@ -95,7 +163,7 @@ nav a:hover {
     padding: 15px 20px;
     width: 100%;
     position: fixed;
-    top: 0;
+    top: 30;
   }
 
   .menu {
@@ -137,7 +205,7 @@ section {
 }
 
 #hero>h2 {
-  margin-top: 70px;
+  margin-top: 190px;
   margin-bottom: 20px;
   word-wrap: break-word;
 }
@@ -221,12 +289,11 @@ h4 {
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
-  scroll-margin-top: 50px;
 }
 
 @media screen and (max-width: 600px) {
   #hero h2 {
-    padding-top: 130px;
+    padding-top: 80px;
   }
 }
 
@@ -235,7 +302,7 @@ h4 {
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1100px;
-  scroll-margin-top: 70px;
+  scroll-margin-top: 130px;
   margin-top: 125px;
   margin-bottom: 70px;
 }
@@ -316,13 +383,13 @@ p {
 }
 
 #Services {
-  scroll-margin-top: 70px;
+  scroll-margin-top: 130px;
 }
 
 @media screen and (max-width: 600px) {
   #About_us {
     padding-top: 70px;
-    scroll-margin-top: 20px;
+    scroll-margin-top: 50px;
   }
 
   .services .options {
@@ -336,7 +403,7 @@ p {
   }
 
   #Services {
-    scroll-margin-top: 80px;
+    scroll-margin-top: 115px;
   }
 
 }
@@ -367,7 +434,7 @@ section>h2#Advantages {
 }
 
 #Advantages {
-  scroll-margin-top: 70px;
+  scroll-margin-top: 130px;
 }
 
 @media (max-width: 600px) {
@@ -387,6 +454,10 @@ section>h2#Advantages {
     margin-top: 10px;
   }
 
+  #Advantages {
+    scroll-margin-top: 120px;
+  }
+
 }
 
 #pricing {
@@ -394,7 +465,7 @@ section>h2#Advantages {
   flex-direction: row;
   justify-content: center;
   margin-top: 60px;
-  scroll-margin-top: 60px;
+  scroll-margin-top: 120px;
 }
 
 .product {
@@ -439,7 +510,7 @@ section>h2#Advantages {
     display: flex;
     flex-direction: column;
     align-items: center;
-    scroll-margin-top: 70px;
+    scroll-margin-top: 110px;
   }
 
   .product {
@@ -481,6 +552,16 @@ section>h2#Advantages {
 .sales .sales-options:hover {
   border: 1px solid rgb(127, 124, 124);
   box-shadow: 2px 2px 5px #7c7272;
+}
+
+#Sales {
+  scroll-margin-top: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  #Sales {
+    scroll-margin-top: 30px;
+  }
 }
 
 #bottom {
