@@ -322,6 +322,7 @@ p {
 @media screen and (max-width: 600px) {
   #About_us {
     padding-top: 70px;
+    scroll-margin-top: 20px;
   }
 
   .services .options {
@@ -333,6 +334,11 @@ p {
     width: 100%;
     margin-bottom: 20px;
   }
+
+  #Services {
+    scroll-margin-top: 80px;
+  }
+
 }
 
 .advantages {
@@ -365,10 +371,6 @@ section>h2#Advantages {
 }
 
 @media (max-width: 600px) {
-  #pricing {
-    display: flex;
-    flex-direction: column;
-  }
 
   .advantages {
     flex-direction: column;
@@ -385,12 +387,6 @@ section>h2#Advantages {
     margin-top: 10px;
   }
 
-}
-
-.product {
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 10px;
 }
 
 #pricing {
@@ -434,6 +430,27 @@ section>h2#Advantages {
 
 .product>button:hover {
   background-color: #ba2214dd;
+}
+
+
+@media screen and (max-width: 600px) {
+  
+  #pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-margin-top: 70px;
+  }
+
+  .product {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  h3 {
+    margin-top: 55px;
+  }
+
 }
 
 .sales {
