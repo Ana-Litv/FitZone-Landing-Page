@@ -9,14 +9,6 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  width: 95%;
-}
-
-@media screen and (max-width: 480px) {
-  width: 100%;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -32,12 +24,13 @@ body {
   margin: 0;
 }
 
-a, a:hover {
+a,
+a:hover {
   text-decoration: none;
 }
 
 nav {
-  display: flex;  
+  display: flex;
   align-items: center;
   padding: 5px 20px;
   background: #cccccc;
@@ -96,7 +89,7 @@ nav a:hover {
 
 
 @media screen and (max-width: 600px) {
-  
+
   nav {
     display: block;
     padding: 15px 20px;
@@ -105,20 +98,21 @@ nav a:hover {
     top: 0;
   }
 
-    .menu {
-      margin-top: 15px;
-      display: none;
-    }
+  .menu {
+    margin-top: 15px;
+    display: none;
+  }
 
-    .menu.active, .toggle {
-      display: block;
-    }
+  .menu.active,
+  .toggle {
+    display: block;
+  }
 
-    .toggle {
-      position: absolute;
-      top: 15px;
-      right: 20px;
-    }
+  .toggle {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
 
 }
 
@@ -142,7 +136,7 @@ section {
   margin-top: 20px;
 }
 
-#hero > h2 {
+#hero>h2 {
   margin-top: 70px;
   margin-bottom: 20px;
   word-wrap: break-word;
@@ -169,7 +163,7 @@ h4 {
   margin-inline-end: 0px;
 }
 
-#hero > h4 {
+#hero>h4 {
   margin-bottom: 20px;
   word-wrap: break-word;
 }
@@ -232,7 +226,7 @@ h4 {
 
 @media screen and (max-width: 600px) {
   #hero h2 {
-    padding-top: 130px; 
+    padding-top: 130px;
   }
 }
 
@@ -246,13 +240,13 @@ h4 {
   margin-bottom: 70px;
 }
 
-#About_us > div {
+#About_us>div {
   width: calc(50% - 15px);
   margin-bottom: 20px;
 }
 
 .information {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
@@ -280,17 +274,6 @@ p {
   margin-inline-end: 0px;
 }
 
-@media screen and (max-width: 600px) {
- #About_us {
-    padding-top: 60px; 
-  }
-
-@media screen and (max-width: 480px) {
-  .services .options {
-    width: 100%;
-  }
-}
-
 .services {
   display: flex;
   flex-wrap: wrap;
@@ -298,17 +281,17 @@ p {
   max-width: 800px;
 }
 
-.services .options {  
+.services .options {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: calc(50% - 10px); 
-  height: 150px; 
-  margin-bottom: 20px; 
+  width: calc(50% - 10px);
+  height: 150px;
+  margin-bottom: 20px;
   padding: 10px;
   text-align: center;
-  background-color: #a1a0a0;  
+  background-color: #a1a0a0;
   border: 1px solid rgba(246, 212, 212, 0.268);
   border-radius: 12px;
   box-shadow: 2px 2px 5px #9f9e9e;
@@ -317,14 +300,14 @@ p {
 
 .services .options:hover {
   border: 1px solid rgb(127, 124, 124);
-  box-shadow: 2px 2px 5px #7c7272; 
+  box-shadow: 2px 2px 5px #7c7272;
 }
 
 .services .options img {
   width: 80px;
   height: 80px;
   margin-bottom: 5px;
-} 
+}
 
 .services .options p {
   font-weight: bold;
@@ -334,6 +317,22 @@ p {
 
 #Services {
   scroll-margin-top: 70px;
+}
+
+@media screen and (max-width: 600px) {
+  #About_us {
+    padding-top: 70px;
+  }
+
+  .services .options {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+  }
+
+  #About_us>div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .advantages {
@@ -356,7 +355,7 @@ p {
   text-transform: uppercase;
 }
 
-section > h2#Advantages {
+section>h2#Advantages {
   text-align: center;
   margin-top: 50px;
 }
@@ -365,17 +364,33 @@ section > h2#Advantages {
   scroll-margin-top: 70px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   #pricing {
     display: flex;
     flex-direction: column;
   }
 
-  .product {
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 10px;
+  .advantages {
+    flex-direction: column;
   }
+
+  .pluses {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: justify;
+  }
+
+  .pluses p {
+    margin-top: 10px;
+  }
+
+}
+
+.product {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 #pricing {
@@ -397,7 +412,7 @@ section > h2#Advantages {
   border-radius: 12px;
 }
 
-.product > .level {
+.product>.level {
   width: 100%;
   text-transform: uppercase;
   font-weight: 700;
@@ -407,7 +422,7 @@ section > h2#Advantages {
   border-radius: 12px 12px 0 0;
 }
 
-.product > button {
+.product>button {
   background-color: #af463cdd;
   color: rgb(241, 209, 209);
   margin: 15px 0;
@@ -417,7 +432,7 @@ section > h2#Advantages {
   transition: all 0.3s ease 0s;
 }
 
-.product > button:hover {
+.product>button:hover {
   background-color: #ba2214dd;
 }
 
@@ -433,13 +448,13 @@ section > h2#Advantages {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: calc(50% - 10px); 
-  height: 290px; 
+  width: calc(50% - 10px);
+  height: 290px;
   margin-top: 90px;
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
   padding: 20px;
   text-align: justify;
-  background-color: #bbbaba;  
+  background-color: #bbbaba;
   border: 1px solid rgba(101, 89, 89, 0.268);
   border-radius: 12px;
   box-shadow: 2px 2px 5px #9f9e9e;
@@ -448,14 +463,15 @@ section > h2#Advantages {
 
 .sales .sales-options:hover {
   border: 1px solid rgb(127, 124, 124);
-  box-shadow: 2px 2px 5px #7c7272; 
+  box-shadow: 2px 2px 5px #7c7272;
 }
 
 #bottom {
   max-width: 400px;
   margin: 0 auto;
 }
-#bottom > h4 {
+
+#bottom>h4 {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 70px;
@@ -468,7 +484,7 @@ footer {
   padding: 20px;
 }
 
-footer > ul {
+footer>ul {
   display: flex;
   justify-content: flex-end;
   list-style-type: none;
@@ -479,17 +495,17 @@ footer > ul {
   padding-inline-start: 40px;
 }
 
-footer > ul > li {
+footer>ul>li {
   padding: 0 10px;
   list-style: none;
   cursor: pointer;
 }
 
-footer > ul > li:hover {
+footer>ul>li:hover {
   color: black;
 }
 
-footer > span {
+footer>span {
   margin-top: 5px;
   display: flex;
   justify-content: flex-end;
